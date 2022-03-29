@@ -17,4 +17,8 @@
 
 > https://qcsh.h5yunban.com/youth-learning/cgi-bin/user-api/course/join?accessToken={balabala}
 
-*若您想看到更多输出信息（用于debug等），可将```main.py```首行的debugging置为1。
+## 其它申明
+- 若系统接口有变，不保证本repo及时更新。
+- 认识怡宝的可以把信息发给他的bot，实现全自动打卡。
+- 不提供任何形式的抓包教学。
+- 若您想看到更多输出信息（用于debug等），可将```main.py```首行的debugging置为1。
