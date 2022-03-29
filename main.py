@@ -32,7 +32,9 @@ def checkConfig(cardNo, nid):
     for i in res:
         if i["id"] == nid:
             return {"status": True, "message": f'{i["title"]}'}
-    return {"status": True, "message": "Unknown"}
+    #return {"status": True, "message": "Unknown"}
+    url = "https://qcsh.h5yunban.com/youth-learning/cgi-bin/common-api/organization/children?pid=" + nid[:-4]
+    return {"status": False, "message": f'nid异常：当前nid存在父级机构，但下属无该团支部。\n请进入\n{url}\n查找正确的nid'}
 
 
 def getCourse(accessToken):
